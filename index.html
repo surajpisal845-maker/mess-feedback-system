@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Feedback System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🍽️ Mess Feedback System</h1>
+
+    <div class="container">
+        
+        <!-- Feedback Form -->
+        <h2>Give Your Feedback</h2>
+
+        <form id="feedbackForm">
+            <input type="text" id="name" placeholder="Your Name (optional)">
+
+            <select id="meal">
+                <option value="">Select Meal</option>
+                <option>Breakfast</option>
+                <option>Lunch</option>
+                <option>Dinner</option>
+            </select>
+
+            <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5">
+
+            <textarea id="comment" placeholder="Write your feedback..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Average Rating -->
+        <h2>Average Rating: <span id="avgRating">0</span> ⭐</h2>
+
+        <!-- Feedback List -->
+        <h2>All Feedback</h2>
+        <div id="feedbackList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
